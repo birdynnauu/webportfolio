@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior:smooth;
+	box-sizing:border-box;
+	font-family:"Barlow Condensed", sans-serif;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	color:#591f3a;
+	background-image:url("img/mainbg.png");
+	background-size:cover;
+}
+
+.flex{
+	display:flex;
+}
+
+a {
+	color:#591f3a;
+	text-decoration: none;
+}
+
+section{
+	padding:40px 0;
+}
+
+.section-title{
+	font-size:36pt;
+	padding-bottom:40px;
+}
+
+/********************* HEADER *********************/
+
+header{
+	background-color:white;
+	padding:15px 80px;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.contact-links{
+	width:320px;
+	justify-content:space-between;
+}
+
+/********************* MAIN *********************/
+
+
+main{
+	width: 100%;
+}
+
+/* General CSS for any sections */
+section{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/********************* FADE ANIMATION *********************/
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/********************* WELCOME *********************/
+
+#welcome{
+	padding:50px 0;
+	
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+	height:450px;
+}
+
+.profile-img {
+	max-width: 250px;
+	border-radius:50%;
+}
+
+#welcome b{
+	font-size:36px;
+}
+
+/********************* BEST WORKS *********************/
+
+#bestwork{
+	background-color:white;
+	color:black;
+	flex-direction:column;
+	align-items:center;
+}
+
+.workbar{
+	width:960px;
+	justify-content:space-around;
+}
+
+.works-container{
+	max-width:960px;
+}
+
+.works-content{
+	width:100%;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+.content{
+	width:45%;
+}
+
+.info{
+	flex-direction:column;
+	padding: 20px 0 0 20px;
+}
+
+.title{
+	font-size:36px;
+	font-weight:600;
+}
+
+.date{
+	padding-bottom:15px;
+}
+
+.description{
+	padding-bottom:25px;
+}
+
+.view-work{
+	background-color:black;
+	color:white;
+	transition:0.8s;
+	
+	padding:10px 40px;
+	
+	align-self:center;
+}
+
+.view-work:hover{
+	background-color:pink;
+	color:black;
+}
+
+/********************* SLIDESHOW *********************/
+
+/* Hide slides as default */
+.works-content{
+	display:none;
+}
+
+/* Workbar buttons */
+.work-drop {
+	font-size:18pt;
+	text-align:center;
+	
+	height:100%;
+	width:100%;
+	padding:20px 0;
+	
+	background-color: white;
+	color:black;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .work-drop:hover {
+	background-color: #bbb;
+	cursor: pointer;
+}
+
+
+/********************* SEE MORE *********************/
+
+#seemore, .account, .link, .more-about{
+	flex-direction:column;
+	align-items:center;
+}
+
+.more-about{
+	font-size:36px;
+}
+
+/********************* ACCOUNTS *********************/
+
+.more-from{
+	max-width:420px;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.account{
+	text-align:center;
+	width:200px;
+	padding:20px 10px;
+}
+
+.more-about{
+	padding:30px 0;
+}
+
+.more-about a{
+	padding-bottom:30px;
+}
+
+/********************* PORTFOLIO *********************/
+
+.portfolio-ctn{
+	width:50vw;
+}
+
+.portfolio{
+	position: relative; 
+	width:100%;
+	height:0;
+	padding-top: 56.2500%;
+	padding-bottom: 0;
+	box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+	overflow: hidden;
+	border-radius: 8px;
+	will-change: transform;
+}
+
+.portfolio iframe{
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	left: 0; 
+	border: none; 
+	padding: 0;
+	margin: 0;
+}
+
+/********************* THE ARTIST *********************/
+
+.more-from img{
+	max-width:150px;
+	border-radius:50%;
+}
+
+
+/********************* FOOTER *********************/
+
+.main-footer{
+	padding:10px 40px;
+	background-color:pink;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.block{
+	align-items:center;
+}
+
+.footer-logo{
+	height:8vh;
+}
+
+.footer-info{
+	flex-direction:column;
+	margin-left:45px;
+}
+
+.subfooter{
+	background-color:white;
+	padding:10px;
+	text-align:center;
+}
